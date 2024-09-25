@@ -75,4 +75,53 @@ public class Edge implements Comparable<Edge> {
         }
         else return comparedFrom;
     }
+
+    /**
+     * Getter for the from node
+     * @return the from node
+     */
+    public Node from() {
+        return from;
+    }
+
+    /**
+     * Getter for the to node
+     * @return the to node
+     */
+    public Node to() {
+        return to;
+    }
+
+    // TODO
+//    public Edge getSymmetric() {
+//    }
+
+    /**
+     * Indicate if the edge is a self loop, i.e. both from and to nodes are identical
+     * @return true if the edge is a self loop, false otherwise
+     */
+    public boolean isSelfLoop() {
+        return from.equals(to);
+    }
+
+    // TODO
+//    public boolean isMultiEdge() {
+//
+//    }
+
+    /**
+     * Indicate if the edge is weighted
+     * @return true if the edge is weighted, false otherwise
+     */
+    public boolean isWeighted() {
+        return weight != null;
+    }
+
+    /**
+     * Get the weight of the edge
+     * @return the value or null if unweighted
+     */
+    public Integer getWeight() {
+        return weight;
+    }
 }
