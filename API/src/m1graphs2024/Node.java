@@ -1,5 +1,6 @@
 package m1graphs2024;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Node implements Comparable<Node> {
@@ -43,4 +44,70 @@ public class Node implements Comparable<Node> {
     public int compareTo(Node o) {
         return this.id - o.id;
     }
+
+    /**
+     * Get the id of the current node
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * Get the graph holder of the current node
+     * @return the graph holder
+     */
+    public Graph getGraph() {
+        return graphHolder;
+    }
+
+    // TODO
+//    public List<Node> getSuccessors() {
+//
+//    }
+
+    // TODO
+//    public List<Node> getSuccessorsMulti() {
+//
+//    }
+
+    // TODO
+//    public boolean adjacent(Node u) {
+//
+//    }
+
+    // TODO
+//    public int inDegree() {
+//
+//    }
+
+    // TODO
+//    public int outDegree() {
+//
+//    }
+
+    // TODO
+//    public int degree() {
+//
+//    }
+
+    // TODO
+//    public List<Edge> getOutEdges() {
+//
+//    }
+
+    // TODO
+//    public List<Edge> getInEdges() {
+//
+//    }
+
+    // TODO
+//    public List<Edge> getIncidentEdges() {
+//
+//    }
+
+    // TODO
+//    public List<Edge> getEdgesTo(Node u) {
+//
+//    }
 }
