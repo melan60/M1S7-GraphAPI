@@ -13,9 +13,9 @@ public class Node implements Comparable<Node> {
     }
 
     /**
-     * Test if the given object o is similar to the current object
-     * @param o given object
-     * @return true if the given object is the same as the current one, false otherwise
+     * Test if the given node o is similar to the current node
+     * @param o given node
+     * @return true if the given node is the same as the current one, false otherwise
      */
     @Override
     public boolean equals(Object o) {
@@ -27,8 +27,8 @@ public class Node implements Comparable<Node> {
     }
 
     /**
-     * Generate an integer representing the current instance of the class
-     * @return an integer representing the current instance of the class
+     * Generate an integer representing the current instance of the Node class
+     * @return an integer representing the current instance of the Node class
      */
     @Override
     public int hashCode() {
@@ -37,12 +37,12 @@ public class Node implements Comparable<Node> {
 
     /**
      * Compare the ID of the given node with the current one
-     * @param o the node
-     * @return an integer computed from the subtracted id
+     * @param o the gven node
+     * @return 0 if the nodes are identical, -1 if o is superior or 1 otherwise
      */
     @Override
     public int compareTo(Node o) {
-        return this.id - o.id;
+        return Integer.compare(this.id, o.id);
     }
 
     /**
